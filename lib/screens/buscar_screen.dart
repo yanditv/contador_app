@@ -87,12 +87,6 @@ class _BuscarScreenState extends State<BuscarScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Monitoreo Médico en Tiempo Real'),
-        backgroundColor: Colors.blue[800],
-        foregroundColor: Colors.white,
-        elevation: 2,
-      ),
       body: isLoading
           ? const Center(
               child: Column(
