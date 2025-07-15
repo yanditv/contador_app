@@ -1,6 +1,7 @@
 import 'package:contador_app/screens/buscar_screen.dart';
 import 'package:contador_app/screens/contador_screen.dart';
 import 'package:contador_app/screens/perfil_screen.dart';
+import 'package:contador_app/screens/sensores_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -16,6 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
     ContadorScreen(),
     BuscarScreen(),
     PerilScreen(),
+    SensoresScreen(),
   ];
   void _onTap(int index) {
     setState(() {
@@ -38,6 +40,10 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Contador"),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: "Buscar"),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "Perfil"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.sensor_door),
+            label: "Sensores",
+          ),
         ],
       ),
     );
